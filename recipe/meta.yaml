@@ -1,4 +1,4 @@
-{% set version = '0.3.0.1' %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nanoarrow_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nanoarrow/nanoarrow_{{ version }}.tar.gz
-  sha256: 86218bed818c37fd757ed0afff6e92ded6a838f24e91077dc33efc3cbe3db704
+  sha256: 0c5b9118864be4b3d9a496a020748e80ee339b80d056ba6cda8d1ba822298a7f
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -53,11 +53,8 @@ test:
 about:
   home: https://github.com/apache/arrow-nanoarrow
   license: Apache-2.0
-  summary: Provides an 'R' interface to the 'nanoarrow' 'C' library and the 'Apache Arrow' application
-    binary interface. Functions to import and export 'ArrowArray', 'ArrowSchema', and
-    'ArrowArrayStream' 'C' structures to and from 'R' objects are provided alongside
-    helpers to facilitate zero-copy data transfer among 'R' bindings to libraries implementing
-    the 'Arrow' 'C' data interface.
+  summary: Provides an 'R' interface to the 'nanoarrow' 'C' library and the 'Apache Arrow' application binary interface. Functions to import and export 'ArrowArray', 'ArrowSchema', and 'ArrowArrayStream' 'C' structures to and from 'R' objects are provided alongside helpers to facilitate zero-copy data transfer among 'R'
+    bindings to libraries implementing the 'Arrow' 'C' data interface.
   license_family: APACHE
   license_file: LICENSE-2.0.txt
 
