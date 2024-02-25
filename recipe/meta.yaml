@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nanoarrow_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nanoarrow/nanoarrow_{{ version }}.tar.gz
-  sha256: 0c5b9118864be4b3d9a496a020748e80ee339b80d056ba6cda8d1ba822298a7f
+  sha256: 9740d1c6717bb75c1cd2fa3923bf336e90ec2d896418ed7971059530d8ba7a9b
 
 build:
   merge_build_host: true  # [win]
