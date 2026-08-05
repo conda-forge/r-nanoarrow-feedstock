@@ -1,4 +1,4 @@
-{% set version = "0.8.0-1" %}
+{% set version = "0.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nanoarrow_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nanoarrow/nanoarrow_{{ version }}.tar.gz
-  sha256: 7676ca1217b044e3faec31f38a5d6b0b9a6b5adc53f1d6a2168aea5ac744ea87
+  sha256: c3b6bff407f0bd57f74991ca88460723e1aacc06747ff6f1eff2fc07a6771a55
 
 build:
   number: 0
